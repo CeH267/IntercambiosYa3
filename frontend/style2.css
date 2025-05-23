@@ -131,13 +131,18 @@ main.contact-page h1 {
 
 .contact-form-container .form-group {
     margin-bottom: 15px;
+    display: flex; /* Usamos flexbox para alinear etiqueta y textarea */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+
 }
 
 .contact-form-container label {
-    display: block;
+    display: block; /* Asegura que la etiqueta ocupe su propia línea */
     margin-bottom: 5px;
     font-weight: bold;
     color: #555;
+    text-align: left;
+    width: 40%;
 }
 
 .contact-form-container input[type="text"],
