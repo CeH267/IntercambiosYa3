@@ -11,6 +11,16 @@
   - Acentos/Enlaces: #4E6498 (Bleu Outremer 31)
   - Footer: #585D5E (Gris Foncé 31)
 */
+:root {
+    --rojo-vibrante: #E2583E;
+    --azul-brillante: #0077B6;
+    --amarillo-alegre: #FFD166;
+    --verde-esperanza: #4CAF50;
+    --gris-neutro: #F0F0F0;
+    --blanco-puro: #FFFFFF;
+    --negro-principal: #333333;
+}
+
 
 /* Estilos generales */
 
@@ -42,11 +52,12 @@ a:hover {
 
 /* Estilos del encabezado y la barra de navegación */
 header {
-    background-color: #7393b3;
+    background-color: var(--rojo-vibrante);
     color: white;
     padding: 1em 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -58,8 +69,8 @@ nav.main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left;
-    display: inline-block;
+    /*text-align: left;*/
+    /*display: inline-block;*/
 }
 
 nav.main-nav ul li {
@@ -180,6 +191,19 @@ main {
     /* Aquí podrías añadir estilos para iconos específicos */
 }
 
+.fa-whatsapp {
+    color: var(--verde-esperanza);
+}
+
+.fa-instagram {
+    color: var(--rojo-vibrante)
+}
+
+.fa-x {
+    color: var(--negro-principal);
+}
+
+
 /* Estilos para la sección de condiciones legales */
 .legal {
     padding: 20px;
@@ -193,7 +217,6 @@ main {
     color: #585d5e;
     font-size: 1.1em;
     margin-bottom: 0.8em;
-    
 }
 
 .legal ul {
@@ -226,7 +249,7 @@ footer {
     nav.main-nav ul {
         text-align: left;
     }
-    
+
     nav.main-nav ul li {
         display: block;
         margin: 10PX 0;

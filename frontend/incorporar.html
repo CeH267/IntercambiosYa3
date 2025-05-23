@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntercambioYa 3</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="Arriendos.html">Arriendos</a></li>
+                <li><a href="Trueques.html">Trueques</a></li>
+                <li><a href="Contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="incorporar-page">
+        <h1>Incorporar Nuevo Articulo</h1>
+        <p>Por favor, completa el siguiente formulario para añadir un nuevo artículo.</p>
+
+        <div class="incorporar-form-container">
+            <form action="#" id="incorporarForm" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="image">Imagen del Articulo</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                    <small>Selecciona el archivo de imagen que deseas subir.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripción">¿Qué tipo de artículo es?</label>
+                    <div>
+                        <input type="radio" id="ventas" name="tipo" value="ventas" required>
+                        <label for="ventas">Ventas</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="arriendos" name="tipo" value="arriendos" required>
+                        <label for="arriendos">Arriendos</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="trueques" name="tipo" value="trueques" required>
+                        <label for="trueques">Trueques</label>
+                    </div>
+                </div>
+
+                <button type="submit">Incorporar Articulos</button>
+
+            </form>
+        </div>
+
+        <section class="social-media">
+            <h2>Siguenos en Redes Sociales</h2>
+                <ul>
+                    <li><a href="#">
+                        <span class="social-icon fab fa-facebook"></span>
+                            Facebook
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="social-icon fab fa-x"></span>
+                            X.com
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="social-icon fab fa-instagram"></span>
+                            Instagram
+                    </a></li>
+
+                    <li><a href="#">
+                        <span class="social-icon fab fa-whatsapp"></span>
+                            Whatsapp
+                    </a></li>
+                </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 APc_Co_</p>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">
+                            <span class="legal-icon"></span>
+                                Terminos y Condiciones
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="legal-icon"></span>
+                                Politicas de Privacidad
+                        </a></li>
+
+                        <li><a href="#">
+                            <span class="legal-icon"></span>
+                                Aviso Legal
+                        </a></li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

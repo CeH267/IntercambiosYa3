@@ -3,58 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imágenes de Intercambio - Contáctenos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>IntercambioYa 3</title>
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="main-nav">
-            <a href="index.html" class="logo-link">
-            <img src="../img/trueque.png" alt="Logo de Imágenes de Intercambio" class="logo">
-            </a>            
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ventas.html">Ventas</a></li>
-                <li><a href="arriendos.html">Arriendos</a></li>
-                <li><a href="trueques.html">Trueques</a></li>
-                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a href="Arriendos.html">Arriendos</a></li>
+                <li><a href="Trueques.html">Trueques</a></li>
+                <li><a href="incorporar.html">Incorporar</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="contact-page">
         <h1>Contáctenos</h1>
-        <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.</p>
-        </main>
+        <p>Envíanos un mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+        <div class="contact-form-container">
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
 
-    <section class="social-media">
-        <h2>Síguenos en Redes Sociales</h2>
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Puedes encontrarnos en:</p>
+            <ul>
+                <li>Dirección: [Tu Dirección Aquí]</li>
+                <li>Teléfono: [Tu Número de Teléfono Aquí]</li>
+                <li>Email: <a href="mailto:[Tu Correo Electrónico Aquí]">[Tu Correo Electrónico Aquí]</a></li>
+            </ul>
+        </div>
+    </main>
+        <section class="social-media">
+        <h2>Siguenos en Redes Sociales</h2>
         <ul>
-            <li><a href="#"><span class="social-icon"></span>Facebook</a></li>
-            <li><a href="#"><span class="social-icon"></span>Twitter</a></li>
-            <li><a href="#"><span class="social-icon"></span>Instagram</a></li>
+            <li><a href="#">
+                <span class="social-icon fab fa-facebook"></span>
+                Facebook
+            </a></li>
+            <li><a href="#">
+                <span class="social-icon fab fa-x"></span>
+                X.com
+            </a></li>
+            <li><a href="#">
+                <span class="social-icon fab fa-instagram"></span>
+                Instagram
+            </a></li>
+            <li><a href="#">
+                <span class="social-icon fab fa-whatsapp"></span>
+                Whatsapp
+            </a></li>
         </ul>
     </section>
+    </main>
 
-    <section class="legal">
-        <h2>Condiciones Legales</h2>
-        <ul>
-            <li><a href="#"><span class="legal-icon"></span>Términos y Condiciones</a></li>
-            <li><a href="#"><span class="legal-icon"></span>Política de Privacidad</a></li>
-            <li><a href="#"><span class="legal-icon"></span>Aviso Legal</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Imágenes de Intercambio</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 APc_Co_</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">
+                    <span class="legal-icon"></span>
+                    Terminos y Condiciones
+                    </a></li>
+                    <li><a href="#"><span class="legal-icon"></span>
+                    Politicas de Privacidad
+                    </a></li>
+                    <li><a href="#"><span class="legal-icon"></span>
+                    Aviso Legal
+                    </a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script.js"></script> </body>
 </html>
-
-
-<a href="index.html">return</a>

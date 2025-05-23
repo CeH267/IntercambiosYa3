@@ -1,0 +1,701 @@
+/* Paleta de Colores de Le Corbusier (Vibrante) */
+:root {
+    --rojo-vibrante: #E2583E;
+    --azul-brillante: #0077B6;
+    --amarillo-alegre: #FFD166;
+    --verde-esperanza: #4CAF50;
+    --gris-neutro: #F0F0F0;
+    --blanco-puro: #FFFFFF;
+    --negro-principal: #333333;
+    --gris-fonce: #585D5E;
+    --gris-clair: #f4f4f4;
+    --blanc: #fff1ce;
+    --gris-fonce-31: #585d5e;
+    --gris-31: #7e7f7e;
+    --gris-moyen: #9a9b9a;
+    --gris-clair-31: #b5b5af;
+    --bleu-outremer-31: #4e6498;
+    --outremer-moyen: #96b4c9;
+    --outremer-clair: #b3c8cd;
+    --outremer-gris: #d9e1dd;
+    --bleu-ceruleen-31: #3e6e90;
+    --ceruleen-vif: #007ba7;
+    --ceruleen-clair: #84a7b4;
+    --vert-emeraude-31: #007965;
+    --vert-emeraude-moyen: #67b7a3;
+    --vert-emeraude-clair: #a3d1c7;
+    --ocre-jaune-vif: #ffb300;
+    --ocre-jaune: #e0a138;
+    --ocre-jaune-clair: #f2d28f;
+    --rouge-vermillon-31: #ff4d4d;
+    --rouge-vermillon-moyen: #f28b82;
+    --rouge-vermillon-clair: #ffc9c9;
+    --laque-carmin: #b34747;
+    --carmin-moyen: #c97a7a;
+    --carmin-clair: #e6b7b7;
+    --terre-de-sienne-brulee-31: #964b00;
+    --sienne-brulee: #b86a34;
+    --sienne-brulee-claire: #e0b08e;
+    --locre-rouge-vif: #d28b7a;
+    --locre-rouge-moyen: #e0a78f;
+    --locre-rouge-clair: #f5d3b6;
+    }
+
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gris-neutro);
+    color: var(--negro-principal);
+    line-height: 1.6;
+}
+
+h1,h2 {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+header {
+    background-color: var(--laque-carmin);
+    color: white;
+    padding: 1em 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav.main-nav {
+    padding: 0 20px;
+}
+
+nav.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*text-align: left;*/
+    /*display: inline-block;*/
+}
+
+nav.main-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav.main-nav ul li a {
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav.main-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    color: var(--blanco-puro);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Estilos de la página de contacto */
+main.contact-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.contact-page h1 {
+    margin-bottom: 1em;
+    color: var(--azul-brillante);
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: var(--laque-carmin);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #fa5c5c;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: var(--azul-brillante);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.8em;
+}
+
+.contact-info ul li a {
+    font-weight: normal;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--blanco-puro);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--amarillo-alegre);
+}
+
+
+
+
+section.image-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+section.image-grid h2{
+    position: absolute; /* Posiciona el h2 de forma absoluta respecto a section.image-grid */
+    top: 10px; /* Mueve el borde superior del h2 a la mitad de la altura de la sección */
+    left: 50%; /* Mueve el borde izquierdo del h2 a la mitad del ancho de la sección */
+    transform: translateX(-50%); /* Ajusta la posición para centrar el elemento basado en su propio tamaño */
+    z-index: 10; /* Asegura que el h2 esté por encima de las imágenes */
+    color: var(--azul-brillante); /* Cambia el color del texto para que sea legible sobre las imágenes */
+     /* Añade una sombra al texto para mejor contraste */
+    width: 100%; /* Opcional: Haz que ocupe todo el ancho para centrar el texto dentro de él */
+    text-align: center; /* Centra el texto dentro del propio h2 */
+    padding: 0 10px; /* Añade un poco de padding horizontal para que el texto no toque los bordes */
+    box-sizing: border-box;
+     /* Incluye el padding en el ancho total */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grilla responsiva con al menos 250px por columna */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-bottom: 20px;
+}
+
+.image-grid h2 {
+    color: var(--azul-brillante);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave al hacer hover */
+}
+
+.grid-item img:hover {
+    transform: scale(1.03); /* Ligeramente aumenta el tamaño al hacer hover */
+}
+
+.grid-item .image-info h3 a {
+    text-decoration: none;
+    color: var(--azul-brillante);
+}
+
+.grid-item .image-info h3 a:hover {
+    color: var(--bleu-ceruleen-31);
+}
+
+/* Estilos para la página de incorporación de artículos */
+main.incorporar-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Centra el contenido principal horizontalmente */
+}
+
+main.incorporar-page h1 {
+    margin-bottom: 1em;
+    color: var(--azul-brillante); /*color encabezado */
+}
+
+main.incorporar-page p {
+    margin-bottom: 2em;
+    color: #777; /*color del texto descriptivo */
+    text-align: center;
+}
+
+.incorporar-form-container {
+    background-color: var(--blanco-puro);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /**ancho maximo del formulario */
+}
+
+.incorporar-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.incorporar-form-container .form-group {
+    margin-bottom: 20px;
+}
+
+.incorporar-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--azul-brillante);
+}
+
+.incorporar-form-container input[type="file"],
+.incorporar-form-container input[type="text"],
+.incorporar-form-container textarea {
+    padding: 12px;
+    border: 1px solid var(--blanco-puro);
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    width: 100%; /* Asegura que los inputs ocupen todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+}
+
+.incorporar-form-container textarea {
+    resize: vertical; /* Permite al usuario redimensionar verticalmente el textarea */
+
+}
+
+.incorporar-form-container button[type="submit"]{
+    background-color: var(--laque-carmin); /**color del boton */
+    color: var(--blanco-puro);
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.incorporar-form-container button[type="submit"]:hover {
+    background-color: #c55647; /* Color del botón al pasar el ratón */
+}
+
+.incorporar-form-container .form-group div {
+    display: flex; /* Usamos flexbox para alinear el radio y la etiqueta */
+    align-items: flex-start; /* Alineación vertical al centro */
+    margin-bottom: 5px; /* Espacio entre las opciones de radio */
+}
+
+.incorporar-form-container .form-group input[type="radio"]{
+    margin-right: 10px; /* Espacio entre el radio y la etiqueta (antes) */
+    vertical-align: middle;/* Centra verticalmente el radio button */
+}
+
+.incorporar-form-container .form-group label[for] {
+    margin-bottom: 0; /* Elimina el margen inferior de las etiquetas de los radios */
+    order: 2;
+    margin-left: 5px; /* Añade espacio entre el radio button y la etiqueta (después) */
+    vertical-align: middle;  /* Centra verticalmente la etiqueta */
+}
+
+
+
+/* Estilos responsivos para el formulario */
+@media (max-width: 768px) {
+    main.incorporar-page {
+        padding: 15px;
+    }
+
+    .incorporar-form-container {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/* Social Media Section */
+/* Estilos para la sección de redes sociales */
+.social-media {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.social-media h2 {
+    color: var(--azul-brillante);
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-media ul li a {
+    color: var(--bleu-ceruleen-31);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-media ul li a:hover {
+    color: var(--ceruleen-clair);
+}
+
+.social-media ul li a .social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+    /* Aquí podrías añadir estilos para iconos específicos */
+}
+
+.fa-whatsapp {
+    color: var(--verde-esperanza);
+}
+
+.fa-instagram {
+    color: var(--rojo-vibrante)
+}
+
+.fa-x {
+    color: var(--negro-principal);
+}
+
+/* Legal Section */
+section.legal a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.legal {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+.legal h2 {
+    color: #585d5e;
+    font-size: 1.1em;
+    margin-bottom: 0.8em;
+}
+
+.legal ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.legal ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--negro-principal);
+    color: var(--gris-neutro);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: var(--gris-neutro);
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links a:hover {
+    color: var(--amarillo-alegre);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .carousel-item {
+        flex: 0 0 250px; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        margin-top: 1rem;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+
+
+/* === Estilos específicos para la página de Venta === */
+
+/* Aplica Open Sans como fuente base para el contenido */
+body {
+    font-family: 'Open Sans', sans-serif; /* Usamos Open Sans como la fuente principal de contenido */
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco-puro);
+    color: var(--negro-principal);
+}
+
+/* Estilo para el título principal de la sección de venta */
+.venta-section h2 {
+    color: var(--rojo-vibrante); /* Usamos un color vibrante de Le Corbusier */
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Título principal con Montserrat */
+    font-weight: 700; /* Negrita para el título */
+}
+
+
+/* Estilos para la grilla de artículos */
+.items-grid {
+    display: grid;
+    /* Crea columnas que se auto-rellenan. Cada columna tendrá un ancho mínimo de 280px y máximo de 1fr (fracción del espacio disponible) */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px; /* Espacio entre los elementos de la grilla */
+    padding: 1rem 0;
+}
+
+/* Estilos para cada artículo individual en la grilla */
+.item {
+    background-color: var(--gris-neutro); /* Fondo suave para el artículo */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que la imagen redondeada no sobresalga */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex; /* Usa flexbox para organizar el contenido dentro del item */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor del item */
+    height: 200px; /* Altura fija para la imagen (ajusta si es necesario) */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-bottom: 3px solid var(--azul-brillante); /* Línea de color de Le Corbusier debajo de la imagen */
+}
+
+.item h3 {
+    font-family: 'Montserrat', sans-serif; /* Títulos de artículo con Montserrat */
+    font-weight: 700; /* Negrita para los títulos */
+    font-size: 1.3rem;
+    color: var(--azul-brillante); /* Color de Le Corbusier para el título */
+    margin: 1rem 1rem 0.5rem 1rem; /* Margen interior */
+}
+
+.item p {
+    font-family: 'Open Sans', sans-serif; /* Descripciones con Open Sans */
+    font-size: 1rem;
+    color: var(--negro-principal); /* Color de texto principal */
+    padding: 0 1rem 1rem 1rem; /* Margen interior */
+    flex-grow: 1; /* Permite que la descripción ocupe el espacio restante */
+    line-height: 1.5;
+}
+
+.item .precio {
+    font-family: 'Montserrat', sans-serif; /* Precio con Montserrat */
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--verde-esperanza); /* Un color alegre para el precio */
+    padding: 0 1rem 1rem 1rem;
+    text-align: right; /* Alinea el precio a la derecha */
+}
+
+
+/* Ajustes responsivos para la página de venta */
+@media (max-width: 600px) {
+    .items-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Unidades más pequeñas en móviles */
+    }
+
+    .venta-section h2 {
+        font-size: 2rem; /* Reduce el tamaño del título en móviles */
+    }
+
+    .item h3 {
+        font-size: 1.2rem;
+    }
+
+    .item p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav.main-nav ul {
+        text-align: left;
+        flex-direction: row;
+    }
+
+    nav.main-nav ul li {
+        display: block;
+        margin: 10PX 0;
+        flex-direction: row;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 10px;
+    }
+
+    .social-media ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    footer {
+        position: static; /* El pie de página fluye con el contenido en pantallas pequeñas */
+    }
+}
+
+/* Para tabletas (un punto medio) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav.main-nav ul {
+        text-align: center;
+    }
+    .image-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Más columnas que en móviles */
+    }
+}
